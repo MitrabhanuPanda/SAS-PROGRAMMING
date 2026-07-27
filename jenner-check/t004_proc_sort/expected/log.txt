@@ -1,0 +1,61 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA WORK.CUST
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote WORK.CUST (10 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote WORK.CUST (10 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote WORK.CUST (10 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote SORTED (10 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote SORTED (10 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: 6 duplicate observations were deleted.
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote SORTED (4 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: 3 duplicate observations were deleted.
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote SORTED (7 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: 3 duplicate observations were deleted.
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote SORTED (7 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SORT data=WORK.CUST
+
+NOTE: 3 duplicate observations were output to DUPOUT dataset.
+NOTE: 3 duplicate observations were deleted.
+NOTE: Read 10 rows from WORK.CUST.
+NOTE: Wrote SORTED (7 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC PRINT data=SORTED
+
+NOTE: PROC PRINT completed: 7 observations printed, 3 variables
+NOTE: PROC PRINT data=DUP
+
+NOTE: PROC PRINT completed: 3 observations printed, 3 variables

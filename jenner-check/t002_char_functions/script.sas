@@ -1,0 +1,177 @@
+/* CHARACTER FUNCTIONS (adapted from SAS_CHARACTER_FUNCTIONS.sas) */
+/* A small WORK.CHARS sample recreates the table the original imported from Excel,
+   so the SCAN and PRXMATCH steps run exactly as written. */
+DATA WORK.CHARS;
+INPUT NAME $ 1-40;
+DATALINES;
+Thomas_Cruise_Mapother
+Steven_Allen_Spielberg
+Meryl_Louise_Streep
+Martin_Charles_Scorsese
+Sandra_Annette_Bullock
+;
+RUN;
+
+/* LENGTH */
+data sample;
+name="Thomas Cruise Mapothe";
+len = length(name);
+run;
+
+/* COMPRESS — remove all spaces */
+data sample;
+name="Thomas   Cruise   Mapothe";
+len = length(name);
+compp=compress(name);
+len_2=length(compp);
+run;
+
+/* COMPRESS with character/modifier arguments */
+data sample2;
+value="asdjlAkfbAas12345;%";
+new_value=compress(value,';%');
+run;
+
+data sample2;
+value="asdjlkfbas12345;%";
+new_value=compress(value,'a','i');
+run;
+
+data sample2;
+value="asdjlkfbas12345;%";
+new_value=compress(value,'','d');
+run;
+
+/* COMPBL */
+data sample;
+name="Thomas   Cruise   Mapothe";
+compp=compress(name);
+cobm=compbl(name);
+run;
+
+/* CONCATENATION: || , CAT, CATX */
+DATA SAMPLE;
+FIRST_NAME="THOMAS";
+MIDDLE_NAME="CRUIS";
+LAST_NAME="MAPOTHER";
+FULL_NAME=FIRST_NAME||' '||MIDDLE_NAME||' '||LAST_NAME;
+FULL_NAME2=CAT(FIRST_NAME,MIDDLE_NAME,LAST_NAME);
+FULL_NAME3=CATX(' ',FIRST_NAME,MIDDLE_NAME,LAST_NAME);
+RUN;
+
+/* SCAN — split names on underscore */
+DATA SAMPLE;
+SET WORK.CHARS;
+FIRST_NAME=SCAN(NAME,1,'_');
+MIDDLE_NAME=SCAN(NAME,2,'_');
+LAST_NAME=SCAN(NAME,3,'_');
+RUN;
+
+/* SUBSTR on card numbers */
+data card_info;
+INPUT CARD_NUMBER $ 1-50;
+DATALINES;
+4444333322221110
+9876435209873450
+5674321487907680
+8765432199002340
+;
+RUN;
+
+DATA SAMPLE;
+SET CARD_INFO;
+LAST_DIGITS=SUBSTR(CARD_NUMBER,12,4);
+RUN;
+
+DATA SAMPLE;
+SET CARD_INFO;
+LAST_DIGITS=SUBSTR(CARD_NUMBER,12,4);
+SUBSTR(CARD_NUMBER,5,8)="********";
+RUN;
+
+/* Change case: UPCASE / LOWCASE / PROPCASE */
+data S_NAME;
+INPUT named $ 1-50;
+DATALINES;
+thomas
+adison
+SABESH
+;
+RUN;
+
+DATA CHANGE_CASED;
+SET S_NAME;
+CAPITALS=UPCASE(NAMED);
+SMALLL=LOWCASE(NAMED);
+SENTEC=PROPCASE(NAMED);
+RUN;
+
+/* TRANWRD */
+DATA SAMPLE;
+NAME="THOMAS CRUSI MAPOTHE";
+CHANGED=TRANWRD(NAME,"MAPOTHE","ENOUGH");
+SEC_EXP="JOHN IS GOOD BOY. THAT BOY IS NAUGHTY";
+CHN_SEC=TRANWRD(SEC_EXP,"BOY","GIRL");
+RUN;
+PROC PRINT DATA=SAMPLE;
+RUN;
+
+/* Gender-title example with TRANWRD */
+DATA N_D_2;
+INPUT NAME $10. GENDER $1.;
+CARDS;
+MS.THOMAS M
+MR.RAVI   M
+MS.SAKHSA M
+MR.RASHI  F
+MS.LAXSMI F
+;
+RUN;
+
+DATA SAMPLE2;
+SET n_d_2;
+IF UPCASE(GENDER) = "M" THEN NAME2 = TRANWRD(NAME,"MS.","MR.");
+ELSE IF UPCASE(GENDER) = "F" THEN NAME2 = TRANWRD(NAME,"MR.","MS.");
+ELSE NAME2=NAME;
+RUN;
+
+/* TRANSLATE */
+DATA SAMPLE3;
+NAME="SAMEERS";
+NAME2= TRANSLATE(NAME,'IX','AM');
+RUN;
+
+/* INDEX / FIND */
+DATA SAMPLES;
+NAME="AMAZON.COM";
+EXIST=INDEX(NAME,".");
+RUN;
+
+DATA SAMP;
+STRINGS="INDIA IS A GREAT COUNTRY TO LIVE. THIS IS THE COUNTRY OF FESTIVALS";
+EXITST=FIND(STRINGS,"COUNTRY");
+POS2=FIND(STRINGS,"COUNTRY",25);
+RUN;
+
+/* PRXMATCH — Perl regex position */
+DATA TEST;
+SET WORK.CHARS;
+FLAG=PRXMATCH("/^S/",NAME);
+FLAG2=PRXMATCH("/^S|^M/",NAME);
+RUN;
+
+DATA TEST1;
+INPUT COMMENTS $ 1-100;
+DATALINES;
+THE CUSTOMER CALLED FROM HIS NO. 9765543331 AND MADE THE PMT OF RS. 989782
+REGISTERED THE CUSTOMER NUMBER AS 8844993366 IN ZIP CODE 998855
+;
+RUN;
+
+DATA MOBILE;
+SET TEST1;
+MOB_NUM_POSITION=PRXMATCH("/\d{10}/",COMMENTS);
+MOB_NUMM=SUBSTR(COMMENTS,PRXMATCH("/\d{10}/",COMMENTS),10);
+RUN;
+PROC PRINT DATA=MOBILE;
+RUN;

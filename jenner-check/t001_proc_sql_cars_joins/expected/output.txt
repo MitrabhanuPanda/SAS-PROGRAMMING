@@ -1,0 +1,63 @@
+    Model name  Vehicle type
+--------------  ------------
+           MDX           SUV
+RSX Type S 2dr         Sedan
+       TSX 4dr         Sedan
+        TL 4dr         Sedan
+     325Ci 2dr         Sedan
+       X5 4.4i           SUV
+  Cavalier 4dr         Sedan
+  Focus LX 4dr         Sedan
+ Accord LX 4dr         Sedan
+  Civic DX 4dr         Sedan
+  Camry LE 4dr         Sedan
+Corolla CE 4dr         Sedan
+    Model name  Vehicle type  Region of origin  Manufacturer suggested retail price
+--------------  ------------  ----------------  -----------------------------------
+RSX Type S 2dr         Sedan              Asia                                23820
+       TSX 4dr         Sedan              Asia                                26990
+        TL 4dr         Sedan              Asia                                33195
+ Accord LX 4dr         Sedan              Asia                                20140
+  Civic DX 4dr         Sedan              Asia                                13760
+  Camry LE 4dr         Sedan              Asia                                19560
+Corolla CE 4dr         Sedan              Asia                                14085
+Vehicle type  Region of origin  TOTAL_MSRP
+------------  ----------------  ----------
+         SUV              Asia       36945
+         SUV            Europe       52195
+       Sedan              Asia      151550
+       Sedan            Europe       30795
+       Sedan               USA       27615
+Vehicle type  TOTAL_UNITS  TOTAL_MSRP
+------------  -----------  ----------
+       Sedan           10      209960
+         SUV            2       89140
+CUSTOMER_ID  Company  GENDER   Age     AGE_BUCKET
+-----------  -------  ------  ----  -------------
+        1.0     Acme       M  25.0      YOUNG_AGE
+        2.0     Beta       F  34.0  MID_YOUNG_AGE
+        3.0    Gamma       F  42.0        MID_AGE
+        4.0    Delta       M  61.0        OLD_AGE
+        5.0     Zeta       M  29.0      YOUNG_AGE
+        6.0    Theta       F  55.0        MID_AGE
+   NAME  SEX   AGE  HEIGHT  WEIGHT
+-------  ---  ----  ------  ------
+ Alfred    M  14.0    69.0   112.0
+  Alice    F  13.0    56.0    84.0
+Barbara    F  13.0    65.0    98.0
+  Carol    F  14.0                
+  Henry    M  14.0                
+   NAME  SEX   AGE  HEIGHT  WEIGHT
+-------  ---  ----  ------  ------
+ Alfred    M  14.0    69.0   112.0
+  Alice    F  13.0    56.0    84.0
+Barbara    F  13.0    65.0    98.0
+   NAME  SEX   AGE  HEIGHT  WEIGHT
+-------  ---  ----  ------  ------
+ Alfred    M  14.0    69.0   112.0
+  Alice    F  13.0    56.0    84.0
+Barbara    F  13.0    65.0    98.0
+  Carol    F  14.0                
+  Henry    M  14.0                
+                      57.0    83.0
+                      59.0    84.0

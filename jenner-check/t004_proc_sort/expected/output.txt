@@ -1,0 +1,17 @@
+
+  Obs  COUNTRY    CITY  SALARY
+-----  -------  ------  ------
+    1  India    Delhi     2400
+    2  India    Mumbai    5100
+    3  India    Pune      1800
+    4  Japan    Tokyo     7100
+    5  UK       London    4500
+    6  USA      Austin    3300
+    7  USA      Boston    6200
+
+  Obs  COUNTRY    CITY  SALARY
+-----  -------  ------  ------
+    1  India    Delhi     2400
+    2  UK       London    4500
+    3  USA      Boston    6200
+

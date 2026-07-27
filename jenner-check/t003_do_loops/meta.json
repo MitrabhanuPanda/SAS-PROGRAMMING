@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_do_loops",
+  "source_file": "11. SAS LOOPS/SAS_LOOPS.sas",
+  "source_blob_sha": "57e3265b4f8eee2fbcce8deb0de5638f873d6d09",
+  "source_commit": "7347e6c8e810fd5dc09b87fce413a6fcae13d135",
+  "notes": "Iterative DO / DO WHILE / DO UNTIL loops and a DO-block IF/THEN over SASHELP.CLASS, all from SAS_LOOPS.sas and unmodified."
+}

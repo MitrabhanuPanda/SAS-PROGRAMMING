@@ -1,0 +1,70 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA test
+
+
+NOTE: Wrote test (1 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA WORK.sales_cus
+
+NOTE: Processing inline DATALINES (2 lines)
+
+NOTE: Read 2 rows from DATALINES.
+NOTE: Wrote WORK.sales_cus (2 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA SAMPLE2
+
+
+NOTE: Read 2 rows from WORK.sales_cus.
+NOTE: Wrote SAMPLE2 (2 rows, 15 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=SAMPLE2
+
+NOTE: PROC PRINT completed: 2 observations printed, 15 variables
+NOTE: DATA SAMPLE2B
+
+
+NOTE: Read 2 rows from WORK.sales_cus.
+NOTE: Wrote SAMPLE2B (2 rows, 15 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=SAMPLE2B
+
+NOTE: PROC PRINT completed: 2 observations printed, 15 variables
+NOTE: DATA WORK.mis_vall
+
+NOTE: Processing inline DATALINES (2 lines)
+
+NOTE: Read 2 rows from DATALINES.
+NOTE: Wrote WORK.mis_vall (2 rows, 11 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA SAMPLE3
+
+
+NOTE: Read 2 rows from WORK.mis_vall.
+NOTE: Wrote SAMPLE3 (2 rows, 12 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=SAMPLE3
+
+NOTE: PROC PRINT completed: 2 observations printed, 12 variables
+NOTE: DATA SAMPLE4
+
+
+NOTE: Read 2 rows from WORK.mis_vall.
+NOTE: Wrote SAMPLE4 (2 rows, 12 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=SAMPLE4
+
+NOTE: PROC PRINT completed: 2 observations printed, 12 variables

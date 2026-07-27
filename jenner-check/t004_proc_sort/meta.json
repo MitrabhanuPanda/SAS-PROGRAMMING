@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_proc_sort",
+  "source_file": "2. SAS PROCEDURAL SORT/SAS PROCEDURAL SORT.sas",
+  "source_blob_sha": "23e80c655201e0d46e54684753a08cdb16cd3743",
+  "source_commit": "7347e6c8e810fd5dc09b87fce413a6fcae13d135",
+  "notes": "PROC SORT options OUT/DESCENDING/NODUPKEY/NODUP/BY _ALL_/DUPOUT run against a small WORK.CUST sample recreated in-bundle (original was imported from a local Excel file)."
+}
