@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-27T11:52:59.510413+00:00",
+  "_captured_run_id": "r_cd54fff30fc64a00bb5394476e5353ba",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: 3 duplicate observations were deleted.",
+    "NOTE: 6 duplicate observations were deleted.",
+    "NOTE: 3 duplicate observations were output to DUPOUT dataset.",
+    "NOTE: PROC PRINT completed: 7 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

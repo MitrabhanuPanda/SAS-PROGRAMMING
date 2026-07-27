@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_proc_sql_cars_joins",
+  "source_file": "10. SAS PROCEDURAL SQL/SAS_PROCEDURAL _SQL.sas",
+  "source_blob_sha": "f592febd388e4d6acdc621271f6fe0a41fc4adf6",
+  "source_commit": "7347e6c8e810fd5dc09b87fce413a6fcae13d135",
+  "notes": "PROC SQL: SELECT/WHERE/GROUP BY/HAVING/ORDER BY on SASHELP.CARS (unmodified); CASE WHEN + LEFT/INNER/FULL joins run against small WORK.SCAS/PERS_INFO/PHY_INFO samples recreated in-bundle (originals were imported from a local Excel file)."
+}

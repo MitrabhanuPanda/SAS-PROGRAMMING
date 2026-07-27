@@ -1,0 +1,10 @@
+
+  Obs                  NAME              CHANGED                                SEC_EXP                                  CHN_SEC
+-----  --------------------  -------------------  -------------------------------------  ---------------------------------------
+    1  THOMAS CRUSI MAPOTHE  THOMAS CRUSI ENOUGH  JOHN IS GOOD BOY. THAT BOY IS NAUGHTY  JOHN IS GOOD GIRL. THAT GIRL IS NAUGHTY
+
+  Obs                                                                    COMMENTS  MOB_NUM_POSITION    MOB_NUMM
+-----  --------------------------------------------------------------------------  ----------------  ----------
+    1  THE CUSTOMER CALLED FROM HIS NO. 9765543331 AND MADE THE PMT OF RS. 989782                34  9765543331
+    2  REGISTERED THE CUSTOMER NUMBER AS 8844993366 IN ZIP CODE 998855                           35  8844993366
+

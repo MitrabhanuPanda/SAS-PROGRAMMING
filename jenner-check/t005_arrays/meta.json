@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_arrays",
+  "source_file": "14. SAS ARRAY/SAS_ARRAY.sas",
+  "source_blob_sha": "c996799e77aa0b5c5fe12bc4b07e2eb1c5c6cb40",
+  "source_commit": "7347e6c8e810fd5dc09b87fce413a6fcae13d135",
+  "notes": "SAS arrays: OF-operator MAX/MIN, _NUMERIC_ shorthand, DO-loop missing-value fill, and DIM(), run against small WORK.sales_cus/WORK.mis_vall samples recreated in-bundle (originals were imported from a local Excel file)."
+}

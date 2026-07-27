@@ -1,0 +1,59 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA COUNTER_DATA
+
+
+NOTE: Wrote COUNTER_DATA (10 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA test
+
+
+NOTE: Wrote test (10 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=test
+
+NOTE: PROC PRINT completed: 10 observations printed, 1 variables
+NOTE: DATA TEST1
+
+
+NOTE: Wrote TEST1 (10 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=TEST1
+
+NOTE: PROC PRINT completed: 10 observations printed, 1 variables
+NOTE: DATA CLASS1
+
+
+NOTE: Read 19 rows from SASHELP.class.
+NOTE: Wrote CLASS1 (19 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=CLASS1
+
+NOTE: PROC PRINT completed: 19 observations printed, 8 variables
+NOTE: DATA TEST2
+
+
+NOTE: Wrote TEST2 (3 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=TEST2
+
+NOTE: PROC PRINT completed: 3 observations printed, 1 variables
+NOTE: DATA TEST3
+
+
+NOTE: Wrote TEST3 (3 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=TEST3
+
+NOTE: PROC PRINT completed: 3 observations printed, 1 variables

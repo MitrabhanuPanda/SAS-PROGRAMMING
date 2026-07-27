@@ -1,0 +1,66 @@
+/* LOOPS IN SAS (adapted from SAS_LOOPS.sas) */
+
+/* Create a table with a counter via OUTPUT in a DO loop */
+DATA COUNTER_DATA;
+DO COUNTER = 1 TO 10;
+	OUTPUT;
+END;
+RUN;
+
+/* Iterative DO loop with a BY increment */
+DATA TEST;
+DO TABLE = 16 TO 160 BY 16;
+	OUTPUT;
+END;
+RUN;
+PROC PRINT DATA=TEST;
+RUN;
+
+/* Iterative DO loop, step by 2 */
+DATA TEST1;
+DO TABLE = 2 TO 20 BY 2;
+	OUTPUT;
+END;
+RUN;
+PROC PRINT DATA=TEST1;
+RUN;
+
+/* DO block with IF/THEN over SASHELP.CLASS */
+DATA CLASS1;
+SET SASHELP.CLASS;
+FORMAT STAY CATEGORY $30.;
+IF AGE <= 12 THEN DO;
+	FEE="15K";
+	STAY="ALLOWED";
+	CATEGORY="KID";
+END;
+ELSE DO;
+	FEE="25K";
+	STAY="NOT ALLOWED";
+	CATEGORY="TEENAGE";
+END;
+RUN;
+PROC PRINT DATA=CLASS1;
+RUN;
+
+/* DO WHILE loop */
+DATA TEST2;
+X=1;
+DO WHILE (X<=3);
+	OUTPUT;
+	X+1;
+END;
+RUN;
+PROC PRINT DATA=TEST2;
+RUN;
+
+/* DO UNTIL loop */
+DATA TEST3;
+X=1;
+DO UNTIL (X>3);
+	OUTPUT;
+	X+1;
+END;
+RUN;
+PROC PRINT DATA=TEST3;
+RUN;

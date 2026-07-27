@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_char_functions",
+  "source_file": "6. SAS CHARACTER FUNCTION/SAS_CHARACTER_FUNCTIONS.sas",
+  "source_blob_sha": "5d91a597cb54fe9f13dea5b4a5593fad6f02404a",
+  "source_commit": "7347e6c8e810fd5dc09b87fce413a6fcae13d135",
+  "notes": "Character functions COMPRESS/COMPBL/CAT/CATX/SCAN/SUBSTR/TRANWRD/TRANSLATE/INDEX/FIND/PRXMATCH on the script's inline DATALINES; the SCAN/PRXMATCH steps use a small WORK.CHARS sample recreated in-bundle (original was imported from a local Excel file)."
+}
